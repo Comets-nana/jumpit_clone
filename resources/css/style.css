@@ -1,0 +1,610 @@
+@font-face {
+	font-family: "bold";
+	font-style: normal;
+	src: url(../font/NotoSansKR-Black.ttf) format('truetype');
+}
+
+
+
+
+@font-face {
+	font-family: "r";
+	font-style: normal;
+	src: url(../font/NotoSansKR-Regular.ttf) format('truetype');
+}
+
+
+:root{
+	--color-main:#3386FF;
+	--w:1060px;
+}
+
+
+body{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-family:r;
+	min-width:var(--w);
+}
+
+input,textarea{
+	font-family:r;
+}
+
+header{
+	width:100%;
+	height: 121px;
+	position: fixed;
+	top:0;
+	left:0;
+	background: #fff;
+	border-bottom:1px solid #dedede;
+	z-index: 1000;
+}
+
+
+
+header > div{
+	width:var(--w);
+	margin: 0 auto;
+}
+
+
+header .header-top{
+	height:64px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .header-bottom{
+	height:56px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.search-box{
+	width:520px;
+	height: 42px;
+	border:1px solid rgb(0,221,109);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	padding-left:10px;
+	box-sizing: border-box;
+}
+
+.search-box > i {
+	color:rgb(0,221,109);
+	font-size:18px;
+	margin: 0px 0px 0px 6px;
+}
+
+.search-box > input{
+	width: 90%;
+	outline:none;
+	border:none;
+	padding-left:8px;
+	font-size: 16px;
+}
+
+
+.header-bottom button{
+	background: transparent;
+	border:none;
+	outline: none;
+	color:#000;
+	font-family: r;
+}
+
+.header-bottom .menu-left .headermenu {
+	padding: 0px 48px 0px 0px;
+	font-size: 15px;
+	
+}
+
+.header-bottom .menu-left:hover .headermenu:not(:hover) {
+    color: rgb(136,138,140);
+}
+
+.header-bottom .menu-right .headermenu {
+	font-family: r;
+	color: #222222;
+    font-size: 13px;
+    font-weight: 500px;
+}
+
+.container {
+    width: var(--w);
+    position: relative;
+	margin: 0px auto;
+}
+
+.section {
+    width: 100%;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center; /* 변경된 부분 */
+    margin: 0 auto;
+    padding: 120px 0px 0.1px;
+}
+
+.container {
+	width: var(--w);
+    margin: 40px auto 64px;
+    padding: 0px;
+}
+
+.slider {
+    position: relative;
+    width: 700px;
+    height: 340px;
+    margin: 0px;
+    overflow: hidden;
+    float: left;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.slide div {
+    position: absolute;
+    top:0;
+    left:40px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 32px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.prev {
+	width: 39px;
+	height: 39px;
+    left: 52px;
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+    background: none;
+    color: white;
+    border: 0.25px solid #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    padding: 0px 0px 3px 0px;
+    cursor: pointer;
+}
+
+.next {
+	width: 39px;
+	height: 39px;
+    left: 113px;
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+    background: none;
+    color: white;
+    border: 0.25px solid #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    padding: 0px 0px 3px 0px;
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.twobox {
+    width: 340px;
+    height: 341px;
+    margin: 0px;
+    float: right;
+}
+
+.box-1 {
+    width: 340px;
+    margin: 0 0 20px 0px;
+}
+  
+.appdownload {
+    width: 340px;
+    height: 220px;
+    padding: 32px 20px;
+    background: rgb(250, 250, 250);
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 5px;
+    display: flex;
+    /* align-items: flex-start; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content-wrapper span {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.qr_code img {
+    width: 80px;
+    height: 80px;
+}
+
+.app-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.appstore {
+    border: none;
+    border-radius: 0px;
+    background: none;
+    cursor: pointer;
+    margin: 12px 8px 0px 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(120, 120, 120);
+}
+
+
+.googleplay {
+    border: none;
+    border-radius: 0px;
+    background: none;
+    cursor: pointer;
+    margin: 12px 0px 0px 8px;
+    padding: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(120, 120, 120);
+}
+
+.appstore img,
+.googleplay img {
+    width: 13px;
+    height: 15px;
+    margin-bottom: 1px;
+    margin-right: 4px;
+}
+
+.app-buttons > span {
+    font-size: 8px;
+    margin-top: 14px;
+    color: rgb(120, 120, 120);
+}
+
+.loginblack > button {
+    width: 298px;
+    height: 48px;
+    margin-top: 28px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    border-color: #000;
+    background: #000;
+    color: #fff;
+}
+
+.loginblack > button:hover {
+    border-color: rgb(51, 51, 51);
+    background: rgb(51, 51, 51);
+}
+
+.box-2 {
+    margin-left: 0px;
+    width: 340px;
+}
+
+.noticebox {
+    width: 340px;
+    height: 100px;
+    padding: 20px 20px 26px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 4px;
+}
+
+.noticebox > .notice {
+    font-size: 13px;
+    font-weight: 800;
+    color: rgb(0,221,109);
+}
+
+.noticebox > button {
+    font-size: 15px;
+    border: none;
+    background: none;
+    padding: 0px;
+    margin-top: 6px;
+}
+
+.noticebox > .regdate {
+    font-size: 14px;
+    color: rgb(120, 120, 120);
+}
+
+.themezip {
+    width: var(--w);
+    height: 320px;
+    margin: 100px auto;
+}
+
+.themezip-text {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 100px auto 16px auto;
+    padding-top: 100px;
+}
+
+.themezip-box {
+    width: 1070px;
+    height: 140px;
+    margin: 0px;
+}
+
+.themebox-1 {
+    display: inline-block;
+    position: relative;
+    width: 520px;
+    height: 140px;
+    margin-right: 10px;
+    border-radius: 8px;
+    background: url(https://cdn.jumpit.co.kr/jumpit/position/themes/jobinterview/pc_bn_themes_jobinterview.webp)
+    center center / 520px 140px no-repeat;
+}
+
+.themebox-1 > span {
+    margin: 0px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    white-space: pre-wrap;
+    letter-spacing: -1px;
+}
+
+.themebox-2 {
+    display: inline-block;
+    position: relative;
+    width: 520px;
+    height: 140px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background: url(https://cdn.jumpit.co.kr/jumpit/position/themes/unicorns/pc_bn_themes_unicorns.webp)
+    center center / 520px 140px no-repeat;
+}
+
+.themebox-2 > span {
+    margin: 0px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    white-space: pre-wrap;
+    letter-spacing: -1px;
+}
+
+.qnabox > img {
+    width: var(--w);
+    margin: 50px auto 58px auto;
+    transform: translateZ(0px);
+    backface-visibility: hidden;
+    display: block;
+}
+
+.recommend {
+    width: var(--w);
+    margin: 0px auto 6px auto;
+}
+
+.recommend-top {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(34, 34, 34);
+}
+
+.recommend-btn {
+    padding: 0px 26px 0px 20px;
+    margin-top: 10px;
+    letter-spacing: -0.5px;
+    background-color: rgb(245, 245, 248);
+    border-radius: 4px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.btn-top > p {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: rgb(34, 34, 34);
+    position: relative;
+    width: 100%;
+}
+
+.btn-top > p i {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+}
+
+.btn-bottom {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(119, 119, 119);
+    white-space: pre;
+    position: relative;
+}
+
+.bestposition  {
+    width: var(--w);
+    padding-top: 64px;
+    margin: 0px auto 6px auto;
+    margin-bottom: 6px;
+}
+
+.bestposition > span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.list-card{
+	width: 25%;
+	height: auto;
+	padding: 10px 20px 10px 0px;
+	box-sizing: border-box;
+}
+
+.list-card > img {
+	width:100%;
+	height:150px;
+	object-fit:cover;
+	border-radius: 4px;
+}
+
+
+.list-card label{
+	color:#585858;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 12px;
+	margin-bottom: 6px;
+}
+
+
+.list-card .t1{
+	color:#222;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+
+.list-card .t2{
+	color:#999;
+	font-size: 13px;
+	font-weight: 500;
+    margin: 8px 5px 0px 0px;
+}
+
+.rewardbanner {
+    width: var(--w);
+    height: 100px;
+    margin: 36px auto 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: url("https://cdn.jumpit.co.kr/jumpit/personal/bg_money.svg") rgb(0, 221, 109);
+}
+
+.rewardbanner > span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    width: 100%;
+    margin: 0px auto;
+    padding: 40px 0px 30px;
+    display: block;
+    background: #FBFBFB;
+}
+
+footer > .inner-footer {
+    max-width: 1060px;
+    position: relative;
+    margin: 0px auto;
+    padding: 24px 0px 60px;
+    text-align: left;
+}
+
+.footer-logo {
+    position: absolute;
+    left: 0px;
+    top: 27px;
+    width: 42px;
+    height: 22px;
+}
+
+.footer-contents {
+    padding-left: 92px;
+}
+
+.footer-contents > div span {
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px 0px 16px 0px;
+    color: rgb(102, 102, 102);
+}
+
+.sns-icon {
+    margin-top: 14px;
+    padding-bottom: 16px;
+}
+
+.sns-icon > img {
+    margin-right: 8px;
+}
+
+.emblem {
+    padding-bottom: 16px;
+}

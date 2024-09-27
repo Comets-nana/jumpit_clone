@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>점핏 | 개발자 커리어 점프</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./resources/js/study.js"></script>
+    <link href="./resources/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="header-top">
+          <img style="height: 70%" src="./resources/image/logo.png" />
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="검색어를 입력해주세요" />
+          </div>
+        </div>
+
+        <div class="header-bottom">
+          <div class="menu-left">
+            <button class="headermenu">개발자 채용</button>
+            <button class="headermenu">이력서</button>
+            <button class="headermenu">합격족보</button>
+            <button class="headermenu">#꿀 피드</button>
+            <button class="headermenu">개발자 인터뷰</button>
+            <button class="headermenu">개취콘</button>
+          </div>
+
+          <div class="menu-right">
+            <button class="headermenu">회원가입/로그인</button>
+            <button class="headermenu">기업 서비스</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section">
+        <div class="container">
+          <div class="slider">
+            <div class="slides">
+              <div class="slide">
+                <img
+                  src="https://cdn.jumpit.co.kr/home_contents/main_banner/20240611/v_home_img_mainbanner_7.webp"
+                  alt="Slide 1"
+                />
+                <div>
+                  <span>독보적인 즐거음<br />크래프톤은 채용 중!</span>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.jumpit.co.kr/home_contents/main_banner/20240611/v_home_img_mainbanner_3.webp"
+                  alt="Slide 2"
+                />
+                <div>
+                  <span>세상을 더 즐겁게<br />쿡앱스 개발자 채용 중!</span>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.jumpit.co.kr/home_contents/main_banner/20240611/v_home_img_mainbanner_1.webp"
+                  alt="Slide 3"
+                />
+                <div>
+                  <span>중고차 자율 검사로봇<br />엔지니어 채용 진행중</span>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.jumpit.co.kr/home_contents/main_banner/20240611/v_home_img_mainbanner_2.webp"
+                  alt="Slide 4"
+                />
+                <div>
+                  <span>삼쩜삼 대규모 채용 중!<br />5.27 - 6.16</span>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.jumpit.co.kr/home_contents/main_banner/20240611/v_home_img_mainbanner_6.webp"
+                  alt="Slide 5"
+                />
+                <div>
+                  <span>AI 시대에 맞는 보안 솔루션<br />파수와 함께 만들어요</span>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.jumpit.co.kr/home_contents/main_banner/20240611/v_home_img_mainbanner_5.webp"
+                  alt="Slide 6"
+                />
+                <div>
+                  <span>글로벌 종합식품기업<br />삼양식품에 합류하세요</span>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="https://cdn.jumpit.co.kr/home_contents/main_banner/20240611/v_home_img_mainbanner_4.webp"
+                  alt="Slide 7"
+                />
+                <div>
+                  <span>국내 1위 POS 솔루션<br />오케이포스와 함께해요</span>
+                </div>
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+          <div class="twobox">
+            <div class="box-1">
+              <div class="appdownload">
+                <div class="content-wrapper">
+                  <div>
+                    <span>
+                      점핏 앱 다운로드 하고
+                      <br />
+                      편리하게 이용해보세요.
+                    </span>
+                    <div class="app-buttons">
+                      <button class="appstore">
+                        <img src="./resources/image/applelogo.png" />
+                        App Store
+                      </button>
+                      <span>&#124</span>
+                      <button class="googleplay">
+                        <img src="./resources/image/googleplaylogo.png" />
+                        Google Play
+                      </button>
+                    </div>
+                  </div>
+                  <div class="qr_code">
+                    <img src="https://www.jumpit.co.kr/assets/ic_qr_code.svg" />
+                  </div>
+                </div>
+                <div class="loginblack">
+                  <button>회원가입/로그인</button>
+                </div>
+              </div>
+            </div>
+            <div class="box-2">
+              <div class="noticebox">
+                <span class="notice">Notice</span>
+                <br />
+                <button>
+                  [공지] 개인정보 처리방침 개정에 대&middot&middot&middot&nbsp&nbsp
+                </button>
+                <span class="regdate">2024-04</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="themezip">
+            <div>
+              <div style="height: 350px;"></div>
+              <span class="themezip-text">테마별 모음.zip</span>
+              <div style="height: 15px;"></div>
+            </div>
+            <div class="themezip-box">
+              <div class="themebox-1">
+                <span>개발자 인터뷰가<br />등록된 HOT 기업</span>
+              </div>
+              <div class="themebox-2">
+                <span>K-유니콘으로<br />무럭무럭 크는 중</span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div style="height: 140px;"></div>
+        <div class="qnabox">
+          <img src="https://cdn.jumpit.co.kr/jumpit/banner/home/career_qna.webp" />
+        </div>
+        <div class="recommend">
+          <span class="recommend-top">회원님을 위한 포지션을 보고싶다면?</span>
+          <div class="recommend-btn">
+            <div class="btn-top">
+              <p>
+                <i>🖐</i>
+                <span>3초만에 회원가입/로그인하고 취향저격 포지션을 추천 받아보세요!</span>
+              </p>
+            </div>
+            <div>
+              <span class="btn-bottom">회원가입/로그인  &gt</span>
+            </div>
+          </div>
+        </div>
+        <div class="bestposition">
+          <div style="display: flex; margin-bottom: 6px; font-size: 24px; font-weight: 700;">
+            <span>이번주 인기 포지션</span>
+          </div>
+          <div style="display: flex;flex-wrap:wrap;">
+            <div class="list-card">
+              <img src="https://cdn.jumpit.co.kr/lg/images/hmlee_4/20230310150334873_800_582.webp"/>
+              <label>메라키플레이스</label>
+              <div class="t1">Frontend developer (3년 미만)</div>
+              <div class="t2">TypeScript &middot Next.js &middot React &middot Vercel</div>
+              <div class="t2">서울 서초구 &middot 신입~3년</div>
+            </div>
+            
+            
+            <div class="list-card">
+              <img src="https://cdn.jumpit.co.kr/lg/images/87609/20234802164834870_1280_900.webp"/>
+              <label>플라잉닥터</label>
+              <div class="t1">프론트엔드 개발자</div>
+              <div class="t2">HTML5 &middot CSS 3 &middot TypeScript &middot Vue.js</div>
+              <div class="t2">경기 고양시 &middot 신입~7년</div>
+            </div>
+            
+            <div class="list-card">
+              <img src="https://cdn.jumpit.co.kr/lg/images/3917/20241026171044944_3600_2400.webp"/>
+              <label>마드라스체크</label>
+              <div class="t1">[협업툴 플로우] 글로벌 개발팀(웹서버개발자) 모집</div>
+              <div class="t2">Linux &middot Node.js &middot PostgreSQL &middot MySQL</div>
+              <div class="t2">서울 영등포구 &middot 신입~3년</div>
+            </div>
+            
+            <div class="list-card">
+              <img src="https://cdn.jumpit.co.kr/lg/images/5885/20235014145000595_4032_3024.webp"/>
+              <label>디알엠인사이드</label>
+              <div class="t1">웹 서비스 개발자 모집 (신입/경력)</div>
+              <div class="t2">JavaScript &middot HTML5 &middot Java &middot Spring Boot</div>
+              <div class="t2">서울 송파구 &middot 신입~2년</div>
+            </div>
+            
+            <div class="list-card">
+              <img src="https://cdn.jumpit.co.kr/lg/images/dabin_3358/20224116144118225_1400_1050.webp"/>
+              <label>비모소프트</label>
+              <div class="t1">백엔드 개발자 (신입)</div>
+              <div class="t2">AWS &middot AZURE &middot Ktor &middot Spring &middot Node.js</div>
+              <div class="t2">경기 안양시 &middot 신입~2년</div>
+            </div>
+            
+            <div class="list-card">
+              <img src="https://cdn.jumpit.co.kr/lg/images/songkh87_252139/20242304152353040_612_406.webp"/>
+              <label>삼양식품(삼양라면)</label>
+              <div class="t1">[삼양식품] Healthcare BU HC플랫폼개발팀 Backend개발파트 채용</div>
+              <div class="t2">Python &middot Flask &middot FastAPI &middot Django</div>
+              <div class="t2">서울 성북구 &middot 경력 5~10년</div>
+            </div>
+            
+            <div class="list-card">
+              <img src="https://cdn.jumpit.co.kr/lg/images/6664/20245423185416457/profile-image.webp"/>
+              <label>씨케이스택</label>
+              <div class="t1">Spring Boot, Node.js 백엔드 개발자</div>
+              <div class="t2">Spring Boot &middot Node.js &middot Python &middot MySQL</div>
+              <div class="t2">경기 성남시 &middot 신입~10년</div>
+            </div>
+            
+            <div class="list-card">
+              <img src="https://cdn.jumpit.co.kr/lg/images/261868/20242604172614042/profile-image.webp"/>
+              <label>로그엔코딩</label>
+              <div class="t1">[로그엔코딩] 백엔드 개발자 채용</div>
+              <div class="t2">Python &middot PHP &middot Java &middot Node.js &middot MySQL</div>
+              <div class="t2">서울 강남구 &middot 신입~5년</div>
+            </div>
+          </div>
+        </div>
+        <div class="rewardbanner">
+          <span>점핏에서 지원하고 합격하면 
+                <b style="background: #000000; color: #FFFC33;">취업축하금 70만원</b>
+                을 드려요 💰
+          </span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="inner-footer">
+        <img class="footer-logo" src="https://cdn.jumpit.co.kr/jumpit/logo/ic_logo_ko_grey.svg" />
+        <div class="footer-contents">
+          <div>
+            <span>
+              점핏 고객센터 : 02-2025-2733 (평일 09:00 - 18:00, 주발 &middot 공휴일 휴무)
+              <br>
+              사업자등록 : 113-86-00917 / 직업정보제공사업 : 서울 관악 제 2005-6호 / 통신판매업 : 제 2005-02339호
+            </span>
+          </div>
+          <br />
+          <div>
+            <span>
+              (주)사람인, 우 : 08378, 서울특별시 구로구 디지털로34길 43, 14층(구로동, 코오롱싸이언스밸리 1차), 대표 : 황현순
+              <br>
+              사업자등록 : 113-86-00917 / 직업정보제공사업 : 서울 관악 제 2005-6호 / 통신판매업 : 제 2005-02339호
+            </span>
+          </div>
+          <br />
+          <div>
+            <span>
+              Copyright (c) (주)사람인. All rights reserved.
+            </span>
+          </div>
+          <br />
+          <div class="sns-icon">
+              <img src="https://cdn.jumpit.co.kr/jumpit/personal/v-footer-sns-instagram.svg" />
+              <img src="https://cdn.jumpit.co.kr/jumpit/personal/v-footer-sns-kakao.svg" />
+              <img src="https://cdn.jumpit.co.kr/jumpit/personal/v-footer-sns-youtube.svg" />
+              <img src="https://cdn.jumpit.co.kr/jumpit/personal/v-footer-sns-facebook.svg" />
+              <img src="https://cdn.jumpit.co.kr/jumpit/personal/v-footer-sns-google.svg" />
+              <img src="https://cdn.jumpit.co.kr/jumpit/personal/v-footer-sns-google.svg" />
+          </div>
+          <div class="emblem">
+            <img src="https://cdn.jumpit.co.kr/jumpit/logo/emblem_jumpit_grey.svg" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./resources/js/imageslider.js"></script>
+  </body>
+</html>
